@@ -16,16 +16,16 @@ def getFile(url):
         return  data_str
 
 
-def return_stat():
-    try:
-
-        r=requests.get("http://baidutop.usegoods.com/996.html")
-        if r.status_code:
-            print()
-            return re.findall('<title>(.*?)</title>',r.text,re.S)[0];
-
-    except Exception:
-        return "404"
+# def return_stat():
+#     try:
+#
+#         r=requests.get("http://baidutop.usegoods.com/996.html")
+#         if r.status_code:
+#             print()
+#             return re.findall('<title>(.*?)</title>',r.text,re.S)[0];
+#
+#     except Exception:
+#         return "404"
 def main():
 
     # "'topmsg.json'"
